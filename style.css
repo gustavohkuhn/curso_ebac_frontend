@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #000000;
+}
+
+.header {
+  background-color: #d5dfec;
+  display: flex;
+  padding: 10px;
+}
+
+.logo-ebac {
+  width: 180px;
+}
+
+.sectionTitle {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pwd {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
