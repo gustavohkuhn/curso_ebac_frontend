@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body > header {
+  background-color: rgb(255, 0, 0);
+  padding: 08px 0;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+header li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles article img {
+  /* height: 180px; */
+  width: 100%;
+  border-radius: 15px;
+}
+
+.articles article {
+  width: 30%;
+}
+
+section {
+  padding: 16px 0;
+}
+
+section h2,
+.articles article {
+  margin-bottom: 16px;
+}
+
+.articles article h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.articles article a {
+  background-color: rgb(255, 110, 110);
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.articles article a:hover {
+  text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+  font-size: 24px;
+}
+
+section h2 {
+  font-size: 32px;
+}
+
+#sports {
+  background-color: rgba(253, 0, 0, 0.1);
+}
+
+#sports .articles article a {
+  background-color: rgb(204, 0, 0);
+}
+
+#economy {
+  background-color: rgb(255, 245, 190);
+}
+
+#economy .articles article a {
+  background-color: rgb(255, 174, 23);
+}
+
+#word {
+  background-color: rgb(211, 244, 255);
+}
+
+#word .articles article a {
+  background-color: rgb(0, 185, 185);
+}
+
+#cheers {
+  background-color: rgb(255, 232, 252);
+}
+
+#cheers .articles article a {
+  background-color: rgb(255, 67, 99);
+}
