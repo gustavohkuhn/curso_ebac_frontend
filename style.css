@@ -1,56 +1,86 @@
-/* Definindo estilos para o formulário */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-/* Estilizando os campos de entrada */
-label,
-input {
-  margin: 10px 0;
-}
-
-label {
-  font-weight: bold;
-}
-
-input {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Estilizando o botão de envio */
+.bg {
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  color: black;
+  left: 0;
+  overflow: auto;
+  padding: 3em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  background-size: cover;
+}
+
+.list {
+  text-decoration: line-through;
+  color: #fff;
+}
+
+.container {
+  background-image: url("./background.jpg");
+  background-color: #000;
+  max-width: 640px;
+  width: 70%;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input,
 button {
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 5px;
+  display: block;
+  color: #000;
+  padding: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+ul {
+  color: #fff;
+}
+
+header h1 {
+  text-align: center;
+  color: #fff;
+}
+
+button {
   border: none;
-  background-color: #4caf50;
-  color: white;
-  font-size: 16px;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 32px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+.lista {
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+li {
   cursor: pointer;
 }
 
-/* Estilizando a mensagem de erro */
-.mensagem-erro {
-  color: red;
-  margin-top: 10px;
-}
-
-/* Estilizando a mensagem de sucesso */
-.mensagem-sucesso {
-  color: green;
-  margin-top: 10px;
+.risco {
+  text-decoration: line-through;
 }

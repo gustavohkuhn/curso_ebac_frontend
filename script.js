@@ -1,15 +1,16 @@
-const formulario = document.getElementById('meuFormulario');
-const mensagemValidacao = document.getElementById('mensagemValidacao');
+$(document).ready(function(){
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        const tarefa = $('#tarefa').val();
+        const novaTarefa = $(`<li onClick="riscar(${tarefa.split(" ").join("")})" id="${tarefa.split(" ").join("")}" ></li>`);
+        $(novaTarefa).html(tarefa);
+        $(novaTarefa).appendTo("ul");
+        $('#tarefa').val('');
+        console.log(tarefa);
+    });
+})
 
-formulario.addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita que o formulário seja enviado
-
-  const campoA = parseInt(document.getElementById('campoA').value);
-  const campoB = parseInt(document.getElementById('campoB').value);
-
-  if (campoB > campoA) {
-    mensagemValidacao.innerHTML = '<p class="mensagem-sucesso">Formulário válido!</p>';
-  } else {
-    mensagemValidacao.innerHTML = '<p class="mensagem-erro">Formulário inválido. O número B deve ser maior que o número A.</p>';
-  }
-});
+function riscar(x){
+    idParariscar = x.id;
+    tarefaParaRiscar = document.getElementById(`${idParariscar}`).classList.add('risco');
+};
