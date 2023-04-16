@@ -1,3 +1,3 @@
 # curso_ebac_frontend
 
-Link: https://github.com/gustavohkuhn/jquery-exercise/tree/main
+Link: https://gustavo-jquery-exercise.vercel.app/
